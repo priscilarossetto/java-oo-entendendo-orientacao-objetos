@@ -21,5 +21,8 @@ public class TestaMetodo {
 		}
 		System.out.println(contaDoJoao.saldo);
 		System.out.println(contaDaPriscila.saldo);
+		
+		contaDaPriscila.titular = "priscila rossetto";
+		System.out.println(contaDaPriscila.titular);
 	}
 }
