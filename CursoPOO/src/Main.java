@@ -1,21 +1,23 @@
+import Animais.Cachorro;
 
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Hello Word!");
 		
-		byte variavelByte = 120;
-		//short -32768 a 32767
-		//char 0 a 65535
-		//int -2b a 2b
-		//long -9t a 9t
+		Cachorro cachorro1 = new Cachorro();
 		
-		int variavelInt = 2147483;
-				
-		System.out.println(variavelInt);
+		//criando o objeto cachorro na memória da JVM.
 		
+		cachorro1.nome = "Milka";
+		cachorro1.cor = "Marron";
+		cachorro1.altura = 60;
+		cachorro1.peso = 15.5;
+		cachorro1.tamanhoDoRabo = 10;
 		
-
+		//definindo na memória um  objeto com esses atributos.
+		
+		System.out.println(cachorro1);
+		
 	}
 
 }
