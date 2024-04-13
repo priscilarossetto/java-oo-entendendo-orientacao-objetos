@@ -6,14 +6,10 @@ public class Main {
 		
 		//criei um objeto!
 		Cachorro cachorro1 = new Cachorro();
-		
-		//defini as variaveis dele:
-		cachorro1.nome = "Milka";
-		cachorro1.cor = "Marron";
-		cachorro1.altura = 80;
-		cachorro1.peso = 16.0;
-		cachorro1.tamanhoDoRabo = 25;
-		
+		Cachorro cachorro2 = new Cachorro("Maby", "Creme", 25, 5.5, 5, "nada");
+	
+		System.out.println(cachorro2.getNome());
+		System.out.println(cachorro2.getPeso());
 		
 		//executei um método do objeto, uma ação!
 		cachorro1.latir();
@@ -25,7 +21,9 @@ public class Main {
 		
 		System.out.println("O cachorro está " + cachorro1.interagir("nada"));
 		System.out.println("O cachorro está " + cachorro1.interagir("carinho"));
-		System.out.println("O cachorro está " + cachorro1.interagir("vair dormir!"));
+		System.out.println("O cachorro está " + cachorro1.interagir("vai dormir!"));
+		
+		
 	}
 
 }
