@@ -2,6 +2,8 @@ package Animais;
 
 public class Cachorro {
 	//atributos
+	
+	static int numeroDeCachorros;
 	private String nome;
 	private String cor;
 	private int altura;
@@ -20,13 +22,25 @@ public class Cachorro {
 		this.peso = peso;
 		this.tamanhoDoRabo = tamanhoDoRabo;
 		this.estadoDeEspirito = estadoDeEspirito;
+		
+		numeroDeCachorros ++;
 	}
 
 	//metodos
+	
+	
 	public String getNome() {
 		return this.nome;
 	}
 	
+	public static int getNumeroDeCachorros() {
+		return numeroDeCachorros;
+	}
+
+	public static void setNumeroDeCachorros(int numeroDeCachorros) {
+		Cachorro.numeroDeCachorros = numeroDeCachorros;
+	}
+
 	public void setNome(String nome) {
 		//com o this eu mostro para o java que eu quero o atributo dessa classe
 		//as cores no eclipse "mostram" isso na prática
@@ -95,4 +109,11 @@ public class Cachorro {
 
 		return estadoDeEspirito;
 	}
+
+	@Override
+	public String toString() {
+		return "Cachorro [nome=" + nome + "]";
+	}
+	
+	
 }
