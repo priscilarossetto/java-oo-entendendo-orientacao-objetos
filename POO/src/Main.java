@@ -1,6 +1,7 @@
 import Animais.Cachorro;
 import Animais.Gato;
 import Animais.Passaro;
+import Lojas.Petshop;
 
 public class Main {
 
