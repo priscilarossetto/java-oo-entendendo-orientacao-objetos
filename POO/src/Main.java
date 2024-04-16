@@ -1,4 +1,6 @@
 import Animais.Cachorro;
+import Animais.Gato;
+import Animais.Passaro;
 
 public class Main {
 
@@ -7,13 +9,13 @@ public class Main {
 		//criei um objeto!
 		Cachorro cachorro1 = new Cachorro("Milka", "Marrom", 65, 16.0, 10, "nada");
 		
-		System.out.println(cachorro1.getNumeroDeCachorros());
+		Gato gato1 = new Gato("Felix", "Preto", 4.5);
 		
-		Cachorro cachorro2 = new Cachorro("Maby", "Creme", 25, 5.5, 5, "nada");
+		Passaro passaro1 = new Passaro("Frajola", "Amarelo", 0.5);
 		
-		System.out.println(cachorro2.getNumeroDeCachorros());
-		System.out.println(cachorro1.getNumeroDeCachorros());
-		
+		cachorro1.soar();
+		gato1.soar();
+		passaro1.soar();
 	}
 
 }
